@@ -1,0 +1,89 @@
+html{
+    height:100%;
+}
+body{
+    min-height: 100%;
+    width: 100%;
+    margin:0px;
+    padding:0px;
+    display:flex;
+    flex-direction: column;
+}
+header{
+    font-size:90px;font-family:sans-serif;
+    text-align: center;color:red;width: 100%;
+    height:200px;line-height: 200px;
+}
+#game_board{
+    display: flex;
+    flex-wrap: wrap;
+    width:570px;
+    height: 570px;
+    margin: auto;
+    background: lightgrey;
+    border:3px solid red;
+}
+.field_pin{
+    width:190px;
+    height:190px;
+    font-size:34px;
+    font-family:sans-serif;
+    text-align: center;
+    line-height:190px;
+    border:1px solid rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none;
+}
+.winner{
+    opacity:0.2;
+} 
+.winner_text{
+    position: fixed;
+    top: 0%;
+    font-size: 48px;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    width: 100%;
+    background: black;
+    margin: 0;
+}
+
+.unvisible{
+    display:none;
+}
+.clicked{
+    background: lightslategray;
+}
+#restart{
+    width: 400px;
+    height: 100px;
+    border-radius: 20px;
+    background: black;
+    color: white;
+    font-size: 50px;
+    margin: auto;
+    padding: 10px;
+    cursor: pointer;
+}
+#scores_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ .user_score{
+    font-size: 50px;
+    font-family: sans-serif;
+    margin:0px 100px;
+ }   
+ .user_score span{color:red;}
+ .name{
+     position: absolute;
+     left:0;
+     top:210px;
+     width:250px;
+     height:100px;
+     font-size:25px;
+     cursor: pointer;
+ }
